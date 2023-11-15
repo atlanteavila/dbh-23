@@ -20,9 +20,9 @@ const features = [
     icon: LockClosedIcon,
   },
   {
-    name: 'Extremely reliable Catholic Web Hosting.',
-    description: 'We’re not just another catholic web hosting company. Our goal is to provide the most excellent hosting environment and services possible at the absolute best prices. Catholicism is our core value, hosting is our business!',
-    icon: ArrowPathIcon,
+    name: '99.9% uptime guarantee.',
+    description: 'Down time for a website is not a good thing. We host our servers in one of the largest data centers in the U.S. Our server is not “over-bloated” so downtime is pretty rare around here.',
+    icon: ServerIcon,
   },
   {
     name: '15 day money back guarantee.',
@@ -35,8 +35,8 @@ const features = [
     icon: Cog6ToothIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
+    name: 'Reliable Support.',
+    description: 'The number one compliment we get from our customers is our super star support. We’re here to answer your questions. DBH is not a sideline business. It’s our full time business and we’re always available for you!',
     icon: ServerIcon,
   },
 ]
@@ -51,7 +51,7 @@ export default function WhyCatholicWebHosting() {
           <p className="mt-6 text-lg leading-8 text-gray-600">We were created by Catholics, for Cathoics. You can support us in our mission to evangelize the digital continent!</p>
         </div>
       </div>
-      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-4">
         <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
