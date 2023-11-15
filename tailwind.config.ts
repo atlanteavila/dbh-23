@@ -18,6 +18,12 @@ export default {
       '7xl': ['4rem', { lineHeight: '4.5rem' }],
     },
     extend: {
+      colors: {
+        'bg-main': '#0a050a',
+      },
+      minHeight: {
+        'home-screen-hero': 'calc(100vh - 91px)',
+      },
       borderRadius: {
         '4xl': '2.5rem',
       },
