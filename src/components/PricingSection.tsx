@@ -9,16 +9,6 @@ const frequencies = [
   { value: 'annually', label: 'Annually', priceSuffix: '/year' },
 ]
 const tiers = [
-  /* 
-    Unlimited Disk-space
-    Unlimited Bandwidth
-    10 Domains
-    10 Sub-domains
-    20 Email Accounts
-    10 MySQL Databases
-    Free Script Installer
-    Unlimited FTP Accounts
-  */
   {
     name: 'Personal',
     id: 'tier-freelancer',
@@ -81,7 +71,7 @@ export default function PricingSection() {
 
   return (
     <FadeIn>
-      <div className="bg-white py-12 px-[62px] -mt-[191px] rounded-lg drop-shadow-xl">
+      <div className="bg-white py-12 px-[62px] -mt-[29px] rounded-lg drop-shadow-xl">
         <h4 className='text-2xl mb-5 text-center font-bold'>Pricing that fits everyone!</h4>
         <div className="flex justify-center">
           <RadioGroup

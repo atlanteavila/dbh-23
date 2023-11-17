@@ -18,11 +18,11 @@ export default async function Home() {
     <>
       <HeroSection />
       <FadeIn>
-        <div className="-mt-[20px] p-30 bg-white max-w-5xl m-auto rounded-lg relative">
+        <div className="-mt-[190px] p-30 bg-white max-w-5xl m-auto rounded-lg relative">
           <PricingSection />
         </div>
       </FadeIn>
-      <Container className=''>
+      <Container>
         <FadeIn>
           <WhyCatholicWebHosting />
         </FadeIn>

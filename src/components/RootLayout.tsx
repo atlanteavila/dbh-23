@@ -8,8 +8,8 @@ import { usePathname } from 'next/navigation'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
 
 import { Footer } from '@/components/Footer'
-import { GridPattern } from '@/components/GridPattern'
 import Header from '@/components/Header'
+import { FadeIn } from './FadeIn'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -21,23 +21,25 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
   let shouldReduceMotion = useReducedMotion()
 
   return (
-    <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <Header />
-      <motion.div
-        layout
-        className="relative flex flex-auto overflow-hidden bg-white"
-      >
+    <>
+      <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
         <motion.div
           layout
-          className="relative isolate flex w-full flex-col min-h-full"
+          className="relative flex flex-auto overflow-hidden bg-white"
         >
-
-          <main className="w-full flex-auto">{children}</main>
-
-          <Footer />
+          <motion.div
+            layout
+            className="relative isolate flex w-full flex-col min-h-full"
+          >
+            <Header />
+            <main className="w-full flex-auto">{children}</main>
+            <FadeIn>
+              <Footer />
+            </FadeIn>
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </MotionConfig>
+      </MotionConfig>
+    </>
   )
 }
 
