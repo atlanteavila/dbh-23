@@ -1,10 +1,9 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  Cog6ToothIcon,
-  FingerPrintIcon,
+  ChatBubbleLeftEllipsisIcon,
+  CurrencyDollarIcon,
   LockClosedIcon,
-  ServerIcon,
+  PaperAirplaneIcon,
+  ShieldCheckIcon,
   UserPlusIcon,
 } from '@heroicons/react/20/solid'
 import { FadeIn } from './FadeIn'
@@ -23,22 +22,22 @@ const features = [
   {
     name: '99.9% uptime guarantee.',
     description: 'Down time for a website is not a good thing. We host our servers in one of the largest data centers in the U.S. Our server is not “over-bloated” so downtime is pretty rare around here.',
-    icon: ServerIcon,
+    icon: ShieldCheckIcon,
   },
   {
     name: '15 day money back guarantee.',
     description: 'You can shop with confidence. We want your experience to be excellent–if you’re not happy with our service, simply ask for a full refund. No questions asked within the first 15 days!',
-    icon: FingerPrintIcon,
+    icon: CurrencyDollarIcon,
   },
   {
     name: 'Easily transfer your website.',
     description: 'If you’re interested in moving your existing site to our servers, we’ll gladly take that hassle off your hands. We’ll professionally move your services to our servers 100% free of charge!',
-    icon: Cog6ToothIcon,
+    icon: PaperAirplaneIcon,
   },
   {
     name: 'Reliable Support.',
     description: 'The number one compliment we get from our customers is our super star support. We’re here to answer your questions. DBH is not a sideline business. It’s our full time business and we’re always available for you!',
-    icon: ServerIcon,
+    icon: ChatBubbleLeftEllipsisIcon,
   },
 ]
 

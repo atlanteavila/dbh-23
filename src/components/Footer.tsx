@@ -1,24 +1,19 @@
 import Link from 'next/link'
 
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
   company: [
-    { name: 'About', href: '#' },
+    { name: 'Home Page', href: '#' },
+    { name: 'About Us', href: '#' },
     { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Careers', href: '#' },
+  ],
+
+  products: [
+    { name: 'Web Hosting', href: '#' },
+    { name: 'Domains', href: '#' },
+    { name: 'Website Design', href: '#' },
+    { name: 'SSL Certificates', href: '#' },
+    { name: 'Email hosting', href: '#' },
   ],
   legal: [
     { name: 'Claim', href: '#' },
@@ -97,50 +92,51 @@ export function Footer() {
         Footer
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-2">
+          <div className='text-white -mt-12 mb-12'>
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 457 457">
+              <path fillRule="evenodd" fill="rgb(255, 255, 255)"
+                d="M452.327,273.258 C427.608,396.874 307.359,477.047 183.742,452.328 C60.125,427.609 -20.047,307.359 4.673,183.742 C29.392,60.127 149.641,-20.046 273.258,4.673 C396.874,29.392 477.046,149.641 452.327,273.258 ZM207.046,402.970 C203.376,402.501 199.854,401.959 196.498,401.371 C200.019,402.010 203.537,402.548 207.046,402.970 ZM168.448,64.130 C120.298,81.500 80.798,119.618 62.849,169.842 C90.145,144.453 132.363,128.239 176.544,118.450 C171.945,86.213 168.055,64.489 168.055,64.489 C168.178,64.366 168.316,64.249 168.448,64.130 ZM179.338,138.767 C96.940,159.034 57.449,198.125 54.858,200.763 C41.504,282.206 86.898,360.605 161.083,391.033 C204.816,384.375 191.804,233.052 179.338,138.767 ZM262.099,57.213 C239.047,52.604 216.151,52.759 194.419,56.978 C196.643,76.930 199.512,95.696 202.886,113.371 C273.743,101.641 342.975,104.842 357.979,111.808 C333.611,84.687 300.601,64.913 262.099,57.213 ZM373.485,131.781 C374.259,133.534 374.454,134.450 374.454,134.450 C307.583,123.593 251.995,125.325 206.938,133.032 C243.476,297.232 324.478,357.771 336.758,366.134 C368.067,341.271 391.084,305.627 399.538,263.354 C409.026,215.899 398.375,169.092 373.485,131.781 ZM365.373,302.164 L359.397,297.789 L352.199,299.530 L354.531,292.566 L350.609,286.317 L358.024,286.388 L362.797,280.785 L365.049,287.792 L371.922,290.579 L365.897,294.839 L365.373,302.164 ZM350.298,158.310 L345.020,154.472 L338.674,155.986 L340.721,149.894 L337.251,144.418 L343.794,144.490 L347.997,139.593 L349.993,145.730 L356.058,148.179 L350.750,151.899 L350.298,158.310 ZM103.331,307.582 L98.425,303.812 L92.452,305.406 L94.451,299.286 L91.265,293.856 L97.403,293.844 L101.410,288.892 L103.208,295.002 L108.869,297.375 L103.836,301.164 L103.331,307.582 ZM135.100,128.318 L130.523,125.019 L125.026,126.305 L126.789,121.084 L123.773,116.382 L129.440,116.456 L133.073,112.265 L134.813,117.531 L140.073,119.642 L135.481,122.822 L135.100,128.318 Z" />
+            </svg>
+          </div>
+        </div>
+        <div className="xl:grid xl:grid-cols-3 xl:gap-2">
+          <div className="grid grid-cols-3 gap-8 xl:col-span-2">
+            <div>
+              <h3 className="text-sm font-semibold leading-6 text-white">Company</h3>
+              <ul role="list" className="mt-6 space-y-2">
+                {navigation.company.map((item) => (
+                  <li key={item.name}>
+                    <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Solutions</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">Support</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <div className="mt-10 md:mt-0">
+                  <h3 className="text-sm font-semibold leading-6 text-white">Products & Services</h3>
+                  <ul role="list" className="mt-6 space-y-2">
+                    {navigation.products.map((item) => (
+                      <li key={item.name}>
+                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div>
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Company</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-6 space-y-2">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
