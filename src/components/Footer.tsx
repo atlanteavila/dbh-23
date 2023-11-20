@@ -9,7 +9,7 @@ const navigation = {
   ],
 
   products: [
-    { name: 'Web Hosting', href: '#' },
+    { name: 'Web Hosting', href: '/products/catholic-web-hosting-services' },
     { name: 'Domains', href: '#' },
     { name: 'Website Design', href: '#' },
     { name: 'SSL Certificates', href: '#' },
@@ -87,7 +87,7 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-bg-main" aria-labelledby="footer-heading">
+    <footer className="bg-[#2c444e]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -110,9 +110,9 @@ export function Footer() {
               <ul role="list" className="mt-6 space-y-2">
                 {navigation.company.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                    <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -124,9 +124,9 @@ export function Footer() {
                   <ul role="list" className="mt-6 space-y-2">
                     {navigation.products.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                        <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -139,9 +139,9 @@ export function Footer() {
                 <ul role="list" className="mt-6 space-y-2">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

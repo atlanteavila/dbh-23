@@ -1,0 +1,58 @@
+import { ContactSection } from '@/components/ContactSection'
+import { Container } from '@/components/Container'
+import Incentives from '@/components/Incentives'
+import { FadeIn } from '@/components/FadeIn'
+import PricingSection from '@/components/PricingSection'
+
+export const product = {
+  client: 'Catholic Web Hosting | Drummer Boy Hosting',
+  title: 'Great web hosting for Catholics, by Catholics',
+  description:
+    'We are proud to serve the Catholic community. We have you in mind, 24/7!!!!!!!!!!!!!!!!!!!!!',
+  summary: [
+    'We are proud to serve the Catholic community. We have you in mind, 24/7!',
+    'We built out the blockchain infrastructure that supports Unseal. Unfortunately, we took a massive loss on this project when Unseal’s cryptocurrency, PlaceboCoin, went to zero.',
+  ],
+  logo: null,
+  image: null,
+  date: '2022-10',
+  service: 'Blockchain development',
+  testimonial: {
+    author: { name: 'Emily Selman', role: 'Head of Engineering at Unseal' },
+    content:
+      'Studio did an amazing job building out our core blockchain infrastructure and I’m sure once PlaceboCoin rallies they’ll be able to finish the project.',
+  },
+}
+export const metadata = {
+  title: `${product.title}`,
+  description: product.description,
+}
+
+export const stats = [
+    { name: 'Clients', stat: '300' },
+    { name: 'Server Uptime', stat: '99.1%' },
+    { name: 'Catholic', stat: '100%' },
+  ]
+
+<FadeIn className='mb-32'>
+  <div className="-mt-[75px] p-30 bg-white max-w-5xl m-auto rounded-lg relative">
+    <PricingSection />
+  </div>
+</FadeIn>
+<FadeIn className='mb-24'>
+  <Incentives />
+</FadeIn>
+<FadeIn className='mb-20'>
+  <Container>
+    <h3 className="text-base font-semibold leading-6 text-gray-900">Stats that speak volumes!</h3>
+    <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+      {stats.map((item) => (
+        <div key={item.name} className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+          <dt className="truncate text-sm font-medium text-gray-500">{item.name}</dt>
+          <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{item.stat}</dd>
+        </div>
+      ))}
+    </dl>
+  </Container>
+  <ContactSection />
+</FadeIn>

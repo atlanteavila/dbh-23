@@ -56,10 +56,31 @@ export interface CaseStudy {
   }
 }
 
+export interface Products {
+  date: string
+  client: string
+  title: string
+  description: string
+  summary: Array<string>
+  logo: ImageProps['src']
+  image: ImagePropsWithOptionalAlt
+  service: string
+  testimonial: {
+    author: {
+      name: string
+      role: string
+    }
+    content: string
+  }
+}
+
 export function loadArticles() {
   return loadEntries<Article>('blog', 'article')
 }
 
 export function loadCaseStudies() {
   return loadEntries<CaseStudy>('work', 'caseStudy')
+}
+export function loadProducts() {
+  return loadEntries<Products>('products', 'product')
 }

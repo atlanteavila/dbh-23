@@ -11,9 +11,9 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
-
+export const webHostingUrl: string = '/products/catholic-web-hosting-services/';
 const products = [
-  { name: 'Web Hosting', description: '100% Catholic web hosting.', href: '#', icon: ServerStackIcon },
+  { name: 'Web Hosting', description: '100% Catholic web hosting.', href: webHostingUrl, icon: ServerStackIcon },
   { name: 'Website Design', description: 'Fast, SEO friendly and affordable website design', href: '#', icon: ComputerDesktopIcon },
   { name: 'Domains', description: 'Get the perfect affordable domain', href: '#', icon: GlobeAltIcon },
   { name: 'SSL Certificates', description: 'Let your customers know your value security', href: '#', icon: LockClosedIcon },
@@ -32,7 +32,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-bg-main text-white border-b-[1px] border-white/20">
+    <header className="bg-[#2c444e] text-white border-b-[1px] border-white/20">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-2.5">

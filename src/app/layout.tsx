@@ -6,7 +6,7 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Studio',
+    template: '%s | DrummerBoyHosting.com',
     default: 'Where faith meets technology.',
   },
 }
