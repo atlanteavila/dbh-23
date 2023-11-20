@@ -30,7 +30,7 @@ export default function Incetives() {
                 We built our business on great catholic values
               </h2>
               <p className="mt-4">
-                We've created a true catholic web hosting company. We're not just a company interested in gaining another customer. We have a true mission. Our mission is to aid you in evangelizing the digital continent. We do this by providing you with the best tools and services to help you succeed. We're not just a web hosting company, we're a <strong>catholic web hosting company</strong>.
+                We've created a true catholic web hosting company. We&lsquo;re not just a company interested in gaining another customer. We have a true mission. Our mission is to aid you in evangelizing the digital continent. We do this by providing you with the best tools and services to help you succeed. We're not just a web hosting company, we&lsquo;re a <strong>catholic web hosting company</strong>.
               </p>
             </div>
             <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
