@@ -1,6 +1,5 @@
-export default function Products({ children }: { children: React.ReactNode }) {
+export default function Products() {
   return <div>
     <h1>What?</h1>
-    {children}
   </div>
 }
