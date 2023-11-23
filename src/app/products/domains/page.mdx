@@ -1,0 +1,42 @@
+import { ContactSection } from '@/components/ContactSection'
+import { Container } from '@/components/Container'
+import Incentives from '@/components/Incentives'
+import { FadeIn } from '@/components/FadeIn'
+import PricingSection from '@/components/PricingSection'
+import DomainForm from '@/components/DomainForm'
+import HeroSectionInner from '@/components/HeroSectionInner'
+import domains from '@/images/domains.jpg'
+
+export const product = {
+  client: 'Catholic Domains | Drummer Boy Hosting',
+  title: 'Catholic Domain Registration, work with a company fully dedicated to work with you!',
+  description:
+    'Catholic Domain Registration, work with a company fully dedicated to work with you!',
+  summary: [
+    'Catholic Domain Registration, work with a company fully dedicated to work with you!',
+  ],
+}
+export const metadata = {
+  title: `${product.title}`,
+  description: product.description,
+}
+
+export const stats = [
+    { name: 'Clients', stat: '300' },
+    { name: 'Server Uptime', stat: '99.1%' },
+    { name: 'Catholic', stat: '100%' },
+  ]
+
+<HeroSectionInner
+  title='Catholic Domains'
+  description={`Catholic Domain Registration, work with a company fully dedicated to work with you! We offer some of the lowest prices in the industry, and we are dedicated to helping you get your domain name registered and working for Christ. We offer a wide variety of domain extensions, and we are always adding more. If you have any questions, please contact us today!`}
+  image={domains}
+/>
+<FadeIn className='mb-32'>
+  <div className="-mt-[75px] p-30 bg-white max-w-5xl m-auto rounded-lg relative">
+    <DomainForm />
+  </div>
+</FadeIn>
+<FadeIn className='mb-20'>
+  <ContactSection />
+</FadeIn>

@@ -1,24 +1,12 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import {
-  AtSymbolIcon,
-  Bars3Icon,
-  ComputerDesktopIcon,
-  GlobeAltIcon,
-  LockClosedIcon,
-  ServerStackIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { navigation } from '@/components/Footer'
+
+const products = navigation.products;
+
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
-export const webHostingUrl: string = '/products/catholic-web-hosting-services/';
-const products = [
-  { name: 'Web Hosting', description: '100% Catholic web hosting.', href: webHostingUrl, icon: ServerStackIcon },
-  { name: 'Website Design', description: 'Fast, SEO friendly and affordable website design', href: '#', icon: ComputerDesktopIcon },
-  { name: 'Domains', description: 'Get the perfect affordable domain', href: '#', icon: GlobeAltIcon },
-  { name: 'SSL Certificates', description: 'Let your customers know your value security', href: '#', icon: LockClosedIcon },
-  { name: 'Email Hosting', description: 'Great email hosting for your website!', href: '#', icon: AtSymbolIcon },
-]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
@@ -82,7 +70,7 @@ export default function Header() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-bg-main" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <Link href={item.href} className="block font-semibold text-gray-900">

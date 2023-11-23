@@ -1,6 +1,13 @@
+import { ServerStackIcon, ComputerDesktopIcon, GlobeAltIcon, LockClosedIcon, AtSymbolIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link'
+export const webHostingUrl: string = '/products/catholic-web-hosting-services/';
+export const webDesignUrl: string = '/products/catholic-web-design-services/';
+export const sslCertificatesUrl: string = '/products/ssl-certificates/';
+export const domainsUrl: string = '/products/domains/';
+export const emailHostingUrl: string = '/products/email-hosting/';
 
-const navigation = {
+
+export const navigation = {
   company: [
     { name: 'Home Page', href: '#' },
     { name: 'About Us', href: '#' },
@@ -9,11 +16,11 @@ const navigation = {
   ],
 
   products: [
-    { name: 'Web Hosting', href: '/products/catholic-web-hosting-services' },
-    { name: 'Domains', href: '#' },
-    { name: 'Website Design', href: '#' },
-    { name: 'SSL Certificates', href: '#' },
-    { name: 'Email hosting', href: '#' },
+    { name: 'Web Hosting', description: '100% Catholic web hosting.', href: webHostingUrl, icon: ServerStackIcon },
+    { name: 'Domains', description: 'Get the perfect affordable domain', href: domainsUrl, icon: GlobeAltIcon },
+    { name: 'Website Design', description: 'Fast, SEO friendly and affordable website design', href: webDesignUrl, icon: ComputerDesktopIcon },
+    { name: 'SSL Certificates', description: 'Let your customers know your value security', href: sslCertificatesUrl, icon: LockClosedIcon },
+    { name: 'Email Hosting', description: 'Great email hosting for your website!', href: emailHostingUrl, icon: AtSymbolIcon },
   ],
   legal: [
     { name: 'Claim', href: '#' },

@@ -16,7 +16,8 @@ export default function HeroSectionInner({
       <section className="relative isolate overflow-hidden max-h-xl">
 
         <Image
-          src={image || dbhImage}
+          priority
+          src={image ? image : dbhImage}
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />

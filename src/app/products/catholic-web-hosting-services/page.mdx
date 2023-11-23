@@ -3,6 +3,8 @@ import { Container } from '@/components/Container'
 import Incentives from '@/components/Incentives'
 import { FadeIn } from '@/components/FadeIn'
 import PricingSection from '@/components/PricingSection'
+import HeroSectionInner from '@/components/HeroSectionInner'
+import webHosting from '@/images/web-hosting.jpg'
 
 export const product = {
   client: 'Catholic Web Hosting | Drummer Boy Hosting',
@@ -34,6 +36,11 @@ export const stats = [
     { name: 'Catholic', stat: '100%' },
   ]
 
+  <HeroSectionInner
+    title='Catholic Web Hosting'
+    description='Unlimited Catholic Web Hosting starting at only $4/month.* We take hosting serious, so you don’t have to! Let us help you stay focusd on your mission. Grow your Catholic ministry with us! We have pricing plans for every budget and a 15 day money back guarantee! We are proud to serve the Catholic community. We have you in mind, 24/7!'
+    image={webHosting}
+  />
 <FadeIn className='mb-32'>
   <div className="-mt-[75px] p-30 bg-white max-w-5xl m-auto rounded-lg relative">
     <PricingSection />

@@ -10,13 +10,7 @@ export default async function productLayout({
 }) {
   return (
     <>
-      <HeroSectionInner
-        title='Catholic Web Hosting'
-        description='Unlimited Catholic Web Hosting starting at only $4/month.*'
-      />
-      <>
-        {children}
-      </>
+      {children}
     </>
   )
 }

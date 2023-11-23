@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       colors: {
-        'bg-main': '#0a050a',
+        'bg-main': '#2c444e',
       },
       minHeight: {
         'home-screen-hero': 'calc(100vh - 91px)',
@@ -37,5 +37,5 @@ export default {
     },
   },
   // require plugin tailwind forms
-  plugins: [require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 } satisfies Config
